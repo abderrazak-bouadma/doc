@@ -181,3 +181,76 @@ For your convenience, I’ve compiled this complete guide into a PDF file. You c
 ---
 
 Feel free to ask for any additional details or clarifications as you proceed with your project.
+
+
+
+
+
+
+Below is a list of key documentation links—with brief descriptions—that cover both the initial deployment of Active Directory for high availability and the ongoing (day‑2) operations. These resources are primarily from Microsoft’s official documentation and reputable sources in the industry:
+
+---
+
+### Pre‑Deployment & Design
+
+- **Active Directory Domain Services (AD DS) Overview**  
+  [Microsoft Docs – AD DS Overview](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/active-directory-domain-services-overview)  
+  Provides an introduction to AD DS, its architecture, and design considerations.
+
+- **Best Practices for Active Directory Domain Services**  
+  [Microsoft Docs – AD DS Best Practices](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/best-practices-for-active-directory-domain-services)  
+  Covers guidelines for planning, designing, and deploying AD with high availability and security in mind.
+
+- **Active Directory Sites and Services Overview**  
+  [Microsoft Docs – AD Sites and Services](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-guide/ad-sites-and-services-overview)  
+  Essential for configuring sites, subnets, and replication topology for optimal performance and fault tolerance.
+
+---
+
+### Deployment Steps
+
+- **Installing the AD DS Role**  
+  [Microsoft Docs – Add Roles and Features](https://docs.microsoft.com/en-us/windows-server/administration/server-manager/add-roles-and-features)  
+  Step-by-step instructions for adding roles (including AD DS) via Server Manager.
+
+- **Promoting a Server to a Domain Controller**  
+  [Microsoft Docs – Promote a Domain Controller](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/promote-a-domain-controller)  
+  Detailed guidance on running the AD DS Configuration Wizard and promoting a server to a domain controller.
+
+- **Active Directory High Availability and Disaster Recovery**  
+  [Microsoft Tech Community – AD High Availability](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/active-directory-high-availability-and-disaster-recovery/ba-p/384004)  
+  An industry discussion on ensuring redundancy and planning for disaster recovery in AD deployments.
+
+---
+
+### Post‑Deployment (Day‑2) Operations
+
+- **Backup and Recovery of Active Directory Domain Services**  
+  [Microsoft Docs – AD DS Backup and Restore](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/backup-and-restore-active-directory-domain-services)  
+  Explains how to schedule and test system state backups for disaster recovery.
+
+- **Monitoring and Health Checks with DCDiag**  
+  [Microsoft Docs – DCDiag](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/dcdiag)  
+  Learn how to use built‑in diagnostic tools to monitor domain controller health and replication status.
+
+- **Group Policy Management**  
+  [Microsoft Docs – Group Policy Management Console (GPMC)](https://docs.microsoft.com/en-us/windows-server/administration/grouppolicy/group-policy-management-console-gpmc)  
+  Essential for managing policies that enforce security and performance across your domain.
+
+- **Managing AD in a Virtual Environment**  
+  [Microsoft Docs – AD Domain Controller in Virtualized Environments](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/active-directory-domain-controller-in-virtualized-environments)  
+  Provides guidelines for maintaining AD when your domain controllers run on virtual machines.
+
+- **Security Best Practices for Domain Controllers**  
+  [Microsoft Docs – Secure Your Domain Controller](https://docs.microsoft.com/en-us/windows-server/security/windows-security/secure-your-domain-controller)  
+  Best practices for hardening your domain controllers and protecting your critical authentication infrastructure.
+
+- **Maintaining Active Directory Domain Services**  
+  [Microsoft Docs – Maintain AD DS](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/maintain-active-directory-domain-services)  
+  Recommendations for routine maintenance, performance tuning, and troubleshooting in an operational environment.
+
+---
+
+You can use these links as your primary references for both initial deployment and ongoing day‑2 operations of AD in your new data center. If you need further details or additional resources (such as white papers or specialized guides), these sites often have “Related Links” sections that can guide you deeper into specific topics.
+
+If you’d like a compiled PDF version of this list and associated guidance, please let me know, and I’ll prepare one for you.
